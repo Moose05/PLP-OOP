@@ -8,12 +8,12 @@ class McDonalds:
         print(f"\nWelcome to McDonald's at {self.location}!")
         print("Menu:")
         for item, price in self.menu.items():
-            print(f"- {item}: ${price:.2f}")
+            print(f"- {item}: R{price:.2f}")
 
     def pick_item(self):
         choice = input("\nEnter the item you want to order: ").strip()
         if choice in self.menu:
-            print(f"{choice} costs ${self.menu[choice]:.2f}")
+            print(f"{choice} costs R{self.menu[choice]:.2f}")
         else:
             print("Sorry, that item is not on the menu.")
 
@@ -28,16 +28,16 @@ class BreakfastMenu(McDonalds):
 
 # Define menus
 lunch_items = {
-    "Big Mac": 5.99,
-    "McChicken": 4.49,
-    "Fries": 2.29,
-    "Coke": 1.99
+    "Big Mac": 60.00,
+    "McChicken": 65.00,
+    "Fries": 30.00,
+    "Coke": 20.00
 }
 
 breakfast_items = {
-    "Egg McMuffin": 3.99,
-    "Hotcakes": 3.49,
-    "Coffee": 1.49
+    "Egg McMuffin": 25.00,
+    "Hotcakes": 15.00,
+    "Coffee": 20.00
 }
 
 # Select lunch items to include in breakfast
